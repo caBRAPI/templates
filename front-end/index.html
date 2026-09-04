@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="loja-id" content="df50157e-76ba-4c59-9bbd-ba424240df28">
+
+    <title>Loja MC — Loja oficial</title>
+
+    <!-- Placeholder {{store_id}} é substituído dinamicamente pelo sistema no momento da renderização -->
+    <meta name="loja-id" content="{{store_id}}" />
+
+    <meta name="description" content="Loja virtual moderna para produtos Minecraft.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="module" src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="#top" class="brand">
+            <span class="brand-mark"><i class="fas fa-cube"></i></span>
+            <span>Loja <span>MC</span></span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#top"><i class="fas fa-house"></i> Início</a>
+            <a href="#shop"><i class="fas fa-store"></i> Loja</a>
+            <a href="#discord"><i class="fab fa-discord"></i> Discord</a>
+        </div>
+
+        <div class="nav-actions">
+            <a href="#" id="cart-toggle" class="cart-button" aria-label="Abrir carrinho">
+                <i class="fas fa-bag-shopping"></i>
+                <span id="cart-count" class="hidden">0</span>
+            </a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="nav-mobile" id="nav-mobile">
+        <a href="#top"><i class="fas fa-house"></i> Início</a>
+        <a href="#shop"><i class="fas fa-store"></i> Loja</a>
+        <a href="#discord"><i class="fab fa-discord"></i> Discord</a>
+    </div>
+</nav>
+
+
+<main id="top">
+    <section class="hero">
+        <div>
+            <div class="eyebrow"><i class="fas fa-circle"></i> Loja online</div>
+            <h1>Itens para deixar seu <em>jogo melhor.</em></h1>
+            <p class="hero-copy">
+                Uma loja simples, rápida e segura para encontrar seus produtos favoritos.
+                Escolha, pague e receba sem complicação.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#shop" class="btn btn-primary"><i class="fas fa-store"></i> Ver produtos</a>
+                <a href="#discord" class="btn btn-secondary"><i class="fab fa-discord"></i> Comunidade</a>
+            </div>
+
+            <div class="server-ip-box" onclick="navigator.clipboard.writeText('play.lojamc.com.br').then(()=>{this.querySelector('.ip-copied').style.display='flex';this.querySelector('.ip-copy-hint').style.display='none';setTimeout(()=>{this.querySelector('.ip-copied').style.display='none';this.querySelector('.ip-copy-hint').style.display='flex'},2000)})">
+                <div class="ip-label"><i class="fas fa-server"></i> IP do Servidor</div>
+                <div class="ip-value">play.lojamc.com.br</div>
+                <div class="ip-copy-hint"><i class="fas fa-copy"></i> Clique para copiar</div>
+                <div class="ip-copied" style="display:none"><i class="fas fa-check"></i> Copiado!</div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat"><strong>+12k</strong><span>clientes</span></div>
+                <div class="stat"><strong>24h</strong><span>entrega rápida</span></div>
+                <div class="stat"><strong>4.9/5</strong><span>avaliação média</span></div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-icon">
+                <i class="fas fa-cube"></i>
+            </div>
+            <div class="delivery">
+                <div class="delivery-icon"><i class="fas fa-bolt"></i></div>
+                <div><strong>Entrega instantânea</strong><span>Receba seu produto após a confirmação do pagamento</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-kicker">Por que comprar aqui?</div>
+                    <h2 class="section-title">Tudo pensado para ser simples.</h2>
+                </div>
+            </div>
+
+            <div class="features">
+                <article class="feature">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Entrega rápida</h3>
+                    <p>Receba seu produto automaticamente após a confirmação do pagamento.</p>
+                </article>
+                <article class="feature">
+                    <div class="feature-icon"><i class="fas fa-tag"></i></div>
+                    <h3>Preço justo</h3>
+                    <p>Ofertas e produtos com preços acessíveis para você aproveitar mais.</p>
+                </article>
+                <article class="feature">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Compra segura</h3>
+                    <p>Processo de pagamento protegido e pensado para manter seus dados seguros.</p>
+                </article>
+                <article class="feature">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Suporte</h3>
+                    <p>Precisa de ajuda? Nossa equipe está disponível para atender você.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head" style="justify-content:center;text-align:center">
+                <div>
+                    <div class="section-kicker">Passo a passo</div>
+                    <h2 class="section-title">Como funciona?</h2>
+                    <p class="section-subtitle">Comprar aqui é simples como minerar madeira.</p>
+                </div>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>Escolha</h3>
+                    <p>Navegue pelo catálogo e encontre o item perfeito para você.</p>
+                </div>
+                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-cart-shopping"></i></div>
+                    <h3>Pague</h3>
+                    <p>Adicione ao carrinho e finalize com PIX ou cartão.</p>
+                </div>
+                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Receba</h3>
+                    <p>Entrega instantânea direto no seu jogo ou e-mail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-kicker">Catálogo</div>
+                    <h2 class="section-title">Nossos produtos</h2>
+                    <p class="section-subtitle">Escolha um produto e coloque no carrinho.</p>
+                </div>
+            </div>
+
+            <div id="category-filters"></div>
+
+            <div id="products-list">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner"></i>
+                    <p>Carregando produtos...</p>
+                </div>
+            </div>
+
+            <div id="products-pagination"></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-kicker">Resultados</div>
+                    <h2 class="section-title">Uma loja feita para você.</h2>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card"><i class="fas fa-shopping-cart"></i><strong>+1.200</strong><span>vendas realizadas</span></div>
+                <div class="stat-card"><i class="fas fa-users"></i><strong>+500</strong><span>clientes ativos</span></div>
+                <div class="stat-card"><i class="fas fa-star"></i><strong>99%</strong><span>satisfação</span></div>
+                <div class="stat-card"><i class="fas fa-headset"></i><strong>24h</strong><span>suporte ativo</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head" style="justify-content:center;text-align:center">
+                <div>
+                    <div class="section-kicker">Avaliações</div>
+                    <h2 class="section-title">O que dizem nossos clientes</h2>
+                    <p class="section-subtitle">Comentários reais de quem já comprou.</p>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Produto entregue na hora! Super recomendo, comprei o rank Ouro e já recebi tudo. Atendimento top."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>SteveMC</strong>
+                            <span>Cliente verificado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Já comprei várias vezes e nunca tive problema. PIX é instantâneo e o suporte é muito bom. Nota 10!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>AlexBR</strong>
+                            <span>Cliente verificado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Melhor loja que já comprei. Preço justo, entrega rápida e produtos de qualidade. Virei cliente fiel!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>CreeperFan</strong>
+                            <span>Cliente verificado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discord" class="section">
+        <div class="container">
+            <div class="discord-box">
+                <div>
+                    <div class="section-kicker" style="color:#8994ff">Comunidade</div>
+                    <h2>Precisa de ajuda?</h2>
+                    <p>Entre no nosso Discord para falar com a equipe, tirar dúvidas e acompanhar novidades.</p>
+                </div>
+                <a href="#" class="btn discord-btn"><i class="fab fa-discord"></i> Abrir Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head" style="justify-content:center;text-align:center">
+                <div>
+                    <div class="section-kicker">Dúvidas</div>
+                    <h2 class="section-title">Perguntas frequentes</h2>
+                </div>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary><span class="faq-q"><i class="fas fa-cart-shopping"></i> Como funciona a compra?</span> <i class="fas fa-chevron-down faq-arrow"></i></summary>
+                    <p>Você escolhe o produto, adiciona ao carrinho, informa seus dados e finaliza o pagamento. Após a confirmação, a entrega é realizada conforme o produto.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q"><i class="fas fa-shield-halved"></i> É seguro comprar aqui?</span> <i class="fas fa-chevron-down faq-arrow"></i></summary>
+                    <p>Sim. O pagamento é processado por sistemas próprios de pagamento e os dados são tratados de forma segura.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q"><i class="fas fa-bolt"></i> Quanto tempo demora para receber?</span> <i class="fas fa-chevron-down faq-arrow"></i></summary>
+                    <p>Produtos digitais podem ser entregues automaticamente após a confirmação do pagamento. O prazo de cada produto pode variar.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q"><i class="fas fa-rotate-left"></i> Posso pedir reembolso?</span> <i class="fas fa-chevron-down faq-arrow"></i></summary>
+                    <p>Em caso de problema com o produto ou não entrega, entre em contato com o suporte para análise da situação.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="checkout" role="dialog" aria-modal="true" aria-label="Carrinho e pagamento">
+    <div id="checkout-panel">
+        <div class="checkout-inner">
+            <div class="checkout-header">
+                <div>
+                    <h2><i class="fas fa-bag-shopping"></i> Carrinho</h2>
+                    <p>Finalize seu pedido com segurança.</p>
+                </div>
+                <button id="checkout-close" aria-label="Fechar carrinho"><i class="fas fa-xmark"></i></button>
+            </div>
+
+            <div style="margin-bottom:22px">
+                <div style="font-size:11px;font-weight:800;color:#7f8982;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px">Resumo do pedido</div>
+                <div id="checkout-items"></div>
+                <div class="checkout-total-row">
+                    <span style="font-size:12px;font-weight:700">Total</span>
+                    <strong id="checkout-total">R$ 0,00</strong>
+                </div>
+            </div>
+
+            <form id="checkout-form" novalidate>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-user"></i> Nome completo</label>
+                    <input id="checkout-name" name="name" placeholder="Seu nome completo" autocomplete="name" class="form-input">
+                    <p id="checkout-name-error" class="hidden"></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-at"></i> Nickname <span style="color:#657068">(opcional)</span></label>
+                    <input id="checkout-nickname" name="nickname" placeholder="Seu apelido" maxlength="32" autocomplete="off" class="form-input">
+                    <small style="font-size:10px;color:#68736b">De 4 a 32 caracteres.</small>
+                    <p id="checkout-nickname-error" class="hidden"></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-envelope"></i> E-mail</label>
+                    <input id="checkout-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" class="form-input">
+                    <p id="checkout-email-error" class="hidden"></p>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-phone"></i> Telefone <span style="color:#657068">(opcional)</span></label>
+                        <input id="checkout-phone" name="phone" type="tel" placeholder="(00) 00000-0000" maxlength="15" autocomplete="tel" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-id-card"></i> CPF <span style="color:#657068">(opcional)</span></label>
+                        <input id="checkout-cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" autocomplete="off" class="form-input">
+                        <p id="checkout-cpf-error" class="hidden"></p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-comment"></i> Observação <span style="color:#657068">(opcional)</span></label>
+                    <textarea id="checkout-note" name="note" rows="2" placeholder="Algo a informar?" class="form-input" style="resize:vertical"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-ticket"></i> Cupom <span style="color:#657068">(opcional)</span></label>
+                    <div style="display:flex;gap:8px">
+                        <input id="checkout-coupon" name="coupon" placeholder="Ex: BEMVINDO10" autocomplete="off" class="form-input">
+                        <button id="checkout-apply-coupon" type="button" class="btn btn-secondary" style="white-space:nowrap">Aplicar</button>
+                    </div>
+                    <p id="checkout-coupon-status" class="hidden"></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-credit-card"></i> Pagamento</label>
+                    <div class="payment-methods">
+                        <label>
+                            <input type="radio" name="payment_method" value="PIX" checked>
+                            <div class="payment-option"><i class="fas fa-qrcode"></i><p>PIX</p></div>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment_method" value="CARD">
+                            <div class="payment-option"><i class="fas fa-credit-card"></i><p>Cartão</p></div>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="checkout-submit" type="submit" class="btn btn-primary">
+                    <i class="fas fa-lock"></i> Finalizar pedido
+                </button>
+            </form>
+
+            <div id="checkout-result"></div>
+        </div>
+    </div>
+</div>
+
+<div id="pix-modal" role="dialog" aria-modal="true" aria-label="Pagamento PIX">
+    <div id="pix-modal-panel"></div>
+</div>
+
+<div id="card-modal" role="dialog" aria-modal="true" aria-label="Pagamento Cartão">
+    <div id="card-modal-panel"></div>
+</div>
+
+<div id="checkout-toast" class="checkout-toast opacity-0" role="status" aria-live="polipe"></div>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="#top" class="brand">
+                    <span class="brand-mark"><i class="fas fa-cube"></i></span>
+                    <span>Loja <span>MC</span></span>
+                </a>
+                <p>Itens para deixar seu jogo melhor. Compre com segurança e receba rapidamente.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram" class="social-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube" class="social-youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok" class="social-tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Discord" class="social-discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="#top"><i class="fas fa-house"></i> Início</a>
+                <a href="#shop"><i class="fas fa-store"></i> Loja</a>
+                <a href="#discord"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ajuda</h4>
+                <a href="#shop"><i class="fas fa-circle-question"></i> FAQ</a>
+                <a href="#shop"><i class="fas fa-rotate-left"></i> Reembolso</a>
+                <a href="#shop"><i class="fas fa-truck-fast"></i> Entrega</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                <a href="#"><i class="fas fa-envelope"></i> suporte@loja.com</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <span>© 2026 Loja Virtual. Todos os direitos reservados.</span>
+            <span>Powered by <strong style="color:var(--green)">caBRAPI</strong></span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
