@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Placeholder {{store_id}} é substituído dinamicamente pelo sistema no momento da renderização -->
+      <meta name="loja-id" content="{{store_id}}" />
+
+      <!-- HTML Meta Tags -->
+      <title>Theme Light Shop | Template de Loja Virtual Moderna</title>
+      <meta name="description"
+            content="Template moderno para e-commerce com visual claro, performance elevada, SEO otimizado e experiência premium para lojas virtuais.">
+
+      <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="https://demo-theme-light-shop-web.cabrapi.com.br/">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Theme Light Shop | Template de Loja Virtual Moderna">
+      <meta property="og:description"
+            content="Template moderno para e-commerce com visual claro, performance elevada, SEO otimizado e experiência premium para lojas virtuais.">
+      <meta property="og:image"
+            content="https://blob.cabrapi.com.br/blob/808ff623-b490-414a-8b82-abeadeb87b0d/download">
+
+      <!-- Twitter Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:domain" content="demo-theme-light-shop-web.cabrapi.com.br">
+      <meta property="twitter:url" content="https://demo-theme-light-shop-web.cabrapi.com.br/">
+      <meta name="twitter:title" content="Theme Light Shop | Template de Loja Virtual Moderna">
+      <meta name="twitter:description"
+            content="Template moderno para e-commerce com visual claro, performance elevada, SEO otimizado e experiência premium para lojas virtuais.">
+      <meta name="twitter:image"
+            content="https://blob.cabrapi.com.br/blob/808ff623-b490-414a-8b82-abeadeb87b0d/download">
+
+      <link rel="icon" href="https://blob.cabrapi.com.br/blob/808ff623-b490-414a-8b82-abeadeb87b0d/download"
+            sizes="32x32">
+
+      <link rel="icon" href="https://blob.cabrapi.com.br/blob/808ff623-b490-414a-8b82-abeadeb87b0d/download"
+            sizes="192x192">
+
+      <link rel="apple-touch-icon"
+            href="https://blob.cabrapi.com.br/blob/808ff623-b490-414a-8b82-abeadeb87b0d/download">
+
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap"
+            rel="stylesheet" />
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <!-- EXTERNO E ADAPTAVEL -->
+      <link rel="stylesheet" href="./assets/css/main.css" />
+      <script type="module" src="./assets/js/main.js"></script>
+
+</head>
+
+<body class="bg-[#f8f7f4] text-[#1a1714] min-h-screen flex flex-col">
+
+      <!-- Navbar -->
+      <nav class="sticky top-0 z-[200] bg-[#f8f7f4]/95 backdrop-blur-md border-b border-[#e8e4df] shadow-sm">
+            <div class="max-w-6xl mx-auto px-4">
+
+                  <!-- Toggle -->
+                  <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+                  <div class="flex items-center justify-between h-16 md:h-[68px]">
+
+                        <!-- Logo -->
+                        <a href="#" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                              <div
+                                    class="w-10 h-10 bg-[#1a1714] rounded-xl flex items-center justify-center text-white shadow-md">
+                                    <i class="fas fa-store-alt text-lg"></i>
+                              </div>
+
+                              <span class="text-lg font-medium tracking-tight text-[#1a1714]">
+                                    Loja <strong class="font-bold text-[#c8502a]">Virtual</strong>
+                              </span>
+                        </a>
+
+                        <!-- Desktop Menu -->
+                        <ul class="hidden md:flex items-center gap-2 list-none m-0 p-0">
+
+                              <li>
+                                    <a href="#"
+                                          class="group relative flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-[#6b6560] hover:bg-white hover:text-[#1a1714] transition-all duration-300">
+                                          <i class="fas fa-house text-xs"></i>
+                                          Início
+                                          <span
+                                                class="absolute left-4 bottom-1 w-0 h-[2px] bg-[#c8502a] rounded-full transition-all duration-300 group-hover:w-[55%]"></span>
+                                    </a>
+                              </li>
+
+                              <li>
+                                    <a href="#shop"
+                                          class="group relative flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-[#6b6560] hover:bg-white hover:text-[#1a1714] transition-all duration-300">
+                                          <i class="fas fa-store text-xs"></i>
+                                          Loja
+                                          <span
+                                                class="absolute left-4 bottom-1 w-0 h-[2px] bg-[#c8502a] rounded-full transition-all duration-300 group-hover:w-[45%]"></span>
+                                    </a>
+                              </li>
+
+                              <li>
+                                    <a href="#"
+                                          class="group relative flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-[#6b6560] hover:bg-white hover:text-[#1a1714] transition-all duration-300">
+                                          <i class="fab fa-discord text-xs"></i>
+                                          Discord
+                                          <span
+                                                class="absolute left-4 bottom-1 w-0 h-[2px] bg-[#c8502a] rounded-full transition-all duration-300 group-hover:w-[65%]"></span>
+                                    </a>
+                              </li>
+
+                        </ul>
+
+                        <!-- Actions -->
+                        <div class="flex items-center gap-3">
+
+                              <!-- Cart -->
+                              <a href="#" id="cart-toggle" aria-label="Abrir carrinho"
+                                    class="group relative w-11 h-11 rounded-xl border border-[#e8e4df] bg-white flex items-center justify-center text-[#1a1714] shadow-sm hover:bg-[#1a1714] hover:border-[#1a1714] transition-all duration-300">
+
+                                    <i
+                                          class="fas fa-bag-shopping text-lg transition-colors duration-300 group-hover:text-white"></i>
+
+                                    <span id="cart-count"
+                                          class="absolute -top-1 -right-1 min-w-5 h-5 px-1.5 bg-[#c8502a] text-white text-[0.65rem] rounded-full flex items-center justify-center font-bold border-2 border-white">
+                                          0
+                                    </span>
+                              </a>
+
+                              <!-- Mobile Button -->
+                              <label for="menu-toggle"
+                                    class="md:hidden w-11 h-11 rounded-xl border border-[#e8e4df] bg-white flex items-center justify-center cursor-pointer text-[#1a1714] hover:bg-[#f0ede8] transition-all duration-300">
+
+                                    <i class="fas fa-bars text-lg"></i>
+                              </label>
+
+                        </div>
+                  </div>
+
+                  <!-- Mobile Menu -->
+                  <div class="hidden peer-checked:block md:hidden border-t border-[#e8e4df] py-4">
+
+                        <div class="flex flex-col gap-2">
+
+                              <a href="#"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-[#6b6560] hover:bg-white hover:text-[#1a1714] transition-all">
+                                    <i class="fas fa-house w-4 text-center"></i>
+                                    Início
+                              </a>
+
+                              <a href="#shop"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-[#6b6560] hover:bg-white hover:text-[#1a1714] transition-all">
+                                    <i class="fas fa-store w-4 text-center"></i>
+                                    Loja
+                              </a>
+
+                              <a href="#"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-[#6b6560] hover:bg-white hover:text-[#1a1714] transition-all">
+                                    <i class="fab fa-discord w-4 text-center"></i>
+                                    Discord
+                              </a>
+
+                        </div>
+                  </div>
+
+            </div>
+      </nav>
+
+      <header id="hero" class="relative overflow-hidden py-20 md:py-28 px-4">
+
+            <!-- Background -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#f8f7f4] via-[#faf8f6] to-[#f4f1ed] -z-10"></div>
+
+            <!-- Blur Effects -->
+            <div
+                  class="absolute top-[-120px] right-[-80px] w-[320px] h-[320px] bg-[#c8502a]/10 rounded-full blur-3xl -z-10">
+            </div>
+            <div
+                  class="absolute bottom-[-100px] left-[-80px] w-[260px] h-[260px] bg-[#1a1714]/5 rounded-full blur-3xl -z-10">
+            </div>
+
+            <div class="max-w-7xl mx-auto">
+                  <div class="grid md:grid-cols-2 gap-14 items-center">
+
+                        <!-- Left Content -->
+                        <div>
+
+                              <!-- Badge -->
+                              <div
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-[#ebe5df] rounded-full mb-6 shadow-sm">
+                                    <span class="w-2 h-2 bg-[#c8502a] rounded-full animate-pulse"></span>
+                                    <span class="text-sm font-medium text-[#4f4a46]">
+                                          Loja online • Entrega expressa
+                                    </span>
+                              </div>
+
+                              <!-- Title -->
+                              <h1 class="text-4xl md:text-6xl leading-[1.05] font-bold tracking-tight text-[#1a1714] mb-6"
+                                    style="font-family:'DM Serif Display', serif;">
+
+                                    Sua loja virtual
+                                    <span class="block text-[#c8502a]">
+                                          moderna e completa
+                                    </span>
+                              </h1>
+
+                              <!-- Description -->
+                              <p class="text-lg text-[#6b6560] leading-relaxed max-w-xl mb-8">
+                                    Produtos selecionados, preços acessíveis e uma experiência premium para quem busca
+                                    qualidade, velocidade e praticidade.
+                              </p>
+
+                              <!-- Buttons -->
+                              <div class="flex flex-wrap gap-4 mb-10">
+
+                                    <!-- Produtos -->
+                                    <a href="#shop"
+                                          class="group inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-white border border-[#e8e4df] text-[#1a1714] font-semibold shadow-sm transition-all duration-300 hover:border-[#c8502a] hover:-translate-y-1 hover:shadow-lg">
+
+                                          <i
+                                                class="fas fa-store transition-all duration-300 group-hover:scale-110 group-hover:text-[#c8502a]"></i>
+
+                                          <span class="transition-colors duration-300 group-hover:text-[#c8502a]">
+                                                Ver produtos
+                                          </span>
+                                    </a>
+
+                                    <!-- Discord -->
+                                    <a href="#"
+                                          class="group inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-white border border-[#e8e4df] text-[#1a1714] font-semibold shadow-sm transition-all duration-300 hover:border-[#c8502a] hover:-translate-y-1 hover:shadow-lg">
+
+                                          <i
+                                                class="fab fa-discord transition-all duration-300 group-hover:scale-110 group-hover:text-[#c8502a]"></i>
+
+                                          <span class="transition-colors duration-300 group-hover:text-[#c8502a]">
+                                                Discord
+                                          </span>
+                                    </a>
+
+                              </div>
+
+                              <!-- Stats -->
+                              <div class="flex flex-wrap gap-8">
+
+                                    <div>
+                                          <strong class="block text-2xl font-bold text-[#1a1714]">
+                                                +12k
+                                          </strong>
+                                          <span class="text-sm text-[#6b6560]">
+                                                Clientes ativos
+                                          </span>
+                                    </div>
+
+                                    <div>
+                                          <strong class="block text-2xl font-bold text-[#1a1714]">
+                                                24h
+                                          </strong>
+                                          <span class="text-sm text-[#6b6560]">
+                                                Entrega rápida
+                                          </span>
+                                    </div>
+
+                                    <div>
+                                          <strong class="block text-2xl font-bold text-[#1a1714]">
+                                                4.9★
+                                          </strong>
+                                          <span class="text-sm text-[#6b6560]">
+                                                Avaliação média
+                                          </span>
+                                    </div>
+
+                              </div>
+
+                        </div>
+                        <div class="relative hidden md:block">
+
+                              <!-- Fundo decorativo -->
+                              <div class="absolute -top-8 -right-8 w-40 h-40 bg-[#c8502a]/10 rounded-full blur-3xl">
+                              </div>
+
+                              <!-- Container da imagem -->
+                              <div
+                                    class="relative overflow-hidden rounded-[32px] shadow-[0_35px_80px_rgba(0,0,0,0.14)]">
+
+                                    <img src="https://blob.cabrapi.com.br/blob/808ff623-b490-414a-8b82-abeadeb87b0d/download"
+                                          alt="Produto em destaque"
+                                          class="w-full h-[540px] object-cover rounded-[32px] transition-transform duration-500 hover:scale-[1.03]" />
+
+                                    <!-- Overlay suave -->
+                                    <div
+                                          class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-[32px]">
+                                    </div>
+                              </div>
+
+                              <!-- Card flutuante -->
+                              <div
+                                    class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md px-5 py-4 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.12)] flex items-center gap-4 border border-[#e8e4df]">
+
+                                    <div
+                                          class="w-14 h-14 bg-[#fef3ec] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+
+                                          <i class="fas fa-bolt text-[#c8502a] text-xl"></i>
+                                    </div>
+
+                                    <div>
+                                          <strong class="text-sm block text-[#1a1714] font-semibold">
+                                                Entrega instantânea
+                                          </strong>
+
+                                          <span class="text-xs text-[#6b6560]">
+                                                Receba em minutos
+                                          </span>
+                                    </div>
+
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
+      </header>
+
+      <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                  <div class="text-center mb-12">
+                        <p class="text-[#c8502a] text-sm font-semibold uppercase tracking-wider mb-2"><i
+                                    class="fas fa-shield-halved mr-2"></i> Diferenciais</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-3" style="font-family:'DM Serif Display',serif;">
+                              Por que comprar aqui?</h2>
+                        <p class="text-[#6b6560]">Segurança, rapidez e confiança em cada pedido</p>
+                  </div>
+                  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-[#f8f7f4] p-6 rounded-2xl hover:shadow-lg transition-shadow">
+                              <div class="w-14 h-14 bg-[#fef3ec] rounded-2xl flex items-center justify-center mb-4"><i
+                                          class="fas fa-bolt text-[#c8502a] text-2xl"></i></div>
+                              <h3 class="font-bold mb-2">Entrega rápida</h3>
+                              <p class="text-sm text-[#6b6560]">Receba seu produto em minutos ou de forma totalmente
+                                    automática após o pagamento.</p>
+                        </div>
+                        <div class="bg-[#f8f7f4] p-6 rounded-2xl hover:shadow-lg transition-shadow">
+                              <div class="w-14 h-14 bg-[#fef3ec] rounded-2xl flex items-center justify-center mb-4"><i
+                                          class="fas fa-lock text-[#c8502a] text-2xl"></i></div>
+                              <h3 class="font-bold mb-2">Pagamento seguro</h3>
+                              <p class="text-sm text-[#6b6560]">Transações protegidas com criptografia e validação em
+                                    tempo real.</p>
+                        </div>
+                        <div class="bg-[#f8f7f4] p-6 rounded-2xl hover:shadow-lg transition-shadow">
+                              <div class="w-14 h-14 bg-[#fef3ec] rounded-2xl flex items-center justify-center mb-4"><i
+                                          class="fas fa-headset text-[#c8502a] text-2xl"></i></div>
+                              <h3 class="font-bold mb-2">Suporte ativo</h3>
+                              <p class="text-sm text-[#6b6560]">Atendimento ágil via Discord ou chat para qualquer
+                                    dúvida ou problema.</p>
+                        </div>
+                        <div class="bg-[#f8f7f4] p-6 rounded-2xl hover:shadow-lg transition-shadow">
+                              <div class="w-14 h-14 bg-[#fef3ec] rounded-2xl flex items-center justify-center mb-4"><i
+                                          class="fas fa-tag text-[#c8502a] text-2xl"></i></div>
+                              <h3 class="font-bold mb-2">Melhor preço</h3>
+                              <p class="text-sm text-[#6b6560]">Produtos acessíveis com promoções constantes para
+                                    economizar sempre.</p>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <div class="max-w-6xl mx-auto px-4">
+            <div class="border-t border-[#e8e4df]"></div>
+      </div>
+
+      <section id="shop" class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                  <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                        <div>
+                              <p class="text-[#c8502a] text-sm font-semibold uppercase tracking-wider mb-2"><i
+                                          class="fas fa-store mr-2"></i> Catálogo</p>
+                              <h2 class="text-3xl md:text-4xl font-bold" style="font-family:'DM Serif Display',serif;">
+                                    Nossos produtos</h2>
+                        </div>
+                  </div>
+                  <div id="category-filters" class="flex flex-wrap gap-2 mb-8"></div>
+                  <div id="products-list">
+                        <div class="text-center py-16 text-[#6b6560]"><i
+                                    class="fas fa-spinner fa-spin text-3xl mb-4 block"></i>
+                              <p>Carregando produtos…</p>
+                        </div>
+                  </div>
+                  <div id="products-pagination"></div>
+            </div>
+      </section>
+
+      <div class="max-w-6xl mx-auto px-4">
+            <div class="border-t border-[#e8e4df]"></div>
+      </div>
+
+      <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                  <div class="text-center mb-12">
+                        <p class="text-[#c8502a] text-sm font-semibold uppercase tracking-wider mb-2"><i
+                                    class="fas fa-chart-line mr-2"></i> Resultados</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-3" style="font-family:'DM Serif Display',serif;">
+                              Transparência em números</h2>
+                        <p class="text-[#6b6560]">Dados reais de quem já comprou com a gente</p>
+                  </div>
+                  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div
+                              class="bg-white p-6 rounded-2xl border border-[#e8e4df] text-center hover:shadow-lg transition-shadow">
+                              <div
+                                    class="w-14 h-14 bg-[#f8f7f4] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-shopping-cart text-[#1a1714] text-2xl"></i>
+                              </div>
+                              <div class="text-3xl font-bold">+1.200</div>
+                              <div class="text-sm text-[#6b6560] mt-1">Vendas realizadas</div>
+                        </div>
+                        <div
+                              class="bg-white p-6 rounded-2xl border border-[#e8e4df] text-center hover:shadow-lg transition-shadow">
+                              <div
+                                    class="w-14 h-14 bg-[#f8f7f4] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-users text-[#1a1714] text-2xl"></i>
+                              </div>
+                              <div class="text-3xl font-bold">+500</div>
+                              <div class="text-sm text-[#6b6560] mt-1">Clientes ativos</div>
+                        </div>
+                        <div
+                              class="bg-white p-6 rounded-2xl border border-[#e8e4df] text-center hover:shadow-lg transition-shadow">
+                              <div
+                                    class="w-14 h-14 bg-[#f8f7f4] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-star text-[#1a1714] text-2xl"></i>
+                              </div>
+                              <div class="text-3xl font-bold">99%</div>
+                              <div class="text-sm text-[#6b6560] mt-1">Satisfação</div>
+                        </div>
+                        <div
+                              class="bg-white p-6 rounded-2xl border border-[#e8e4df] text-center hover:shadow-lg transition-shadow">
+                              <div
+                                    class="w-14 h-14 bg-[#f8f7f4] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-headset text-[#1a1714] text-2xl"></i>
+                              </div>
+                              <div class="text-3xl font-bold">24h</div>
+                              <div class="text-sm text-[#6b6560] mt-1">Suporte ativo</div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <div class="max-w-6xl mx-auto px-4">
+            <div class="border-t border-[#e8e4df]"></div>
+      </div>
+
+      <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                  <div class="bg-[#1a1714] rounded-3xl p-10 md:p-14 text-center text-white relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-5"
+                              style="background-image:radial-gradient(circle at 20% 50%, #c8502a 1px, transparent 1px);background-size:30px 30px;">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#a09a94] mb-3 relative z-10">
+                              Atendimento</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 relative z-10"
+                              style="font-family:'DM Serif Display',serif;">Precisa de ajuda?</h2>
+                        <p class="text-[#a09a94] mb-8 max-w-lg mx-auto relative z-10">Fale com nosso suporte em segundos
+                              — estamos sempre disponíveis.</p>
+                        <a href="#"
+                              class="inline-flex items-center gap-2 px-6 py-3.5 bg-[#5865F2] text-white font-semibold rounded-xl hover:bg-[#4752C4] transition-all relative z-10 shadow-lg"><i
+                                    class="fab fa-discord text-lg"></i> Abrir suporte no Discord</a>
+                  </div>
+            </div>
+      </section>
+
+      <section class="py-16 px-4 bg-white">
+            <div class="max-w-3xl mx-auto">
+                  <div class="text-center mb-12">
+                        <p class="text-[#c8502a] text-sm font-semibold uppercase tracking-wider mb-2"><i
+                                    class="fas fa-circle-question mr-2"></i> Dúvidas</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-3" style="font-family:'DM Serif Display',serif;">
+                              Perguntas frequentes</h2>
+                        <p class="text-[#6b6560]">As respostas que você precisa antes de comprar</p>
+                  </div>
+                  <div class="space-y-3">
+                        <details class="group bg-[#f8f7f4] rounded-2xl p-5">
+                              <summary class="flex items-center justify-between cursor-pointer list-none"><span
+                                          class="font-semibold"><i
+                                                class="fas fa-shopping-cart mr-3 text-[#6b6560]"></i>Como funciona a
+                                          compra?</span><i
+                                          class="fas fa-chevron-down text-[#6b6560] group-open:rotate-180 transition-transform"></i>
+                              </summary>
+                              <p class="mt-4 text-[#6b6560] text-sm leading-relaxed">Você escolhe o produto, finaliza o
+                                    pagamento via PIX e recebe automaticamente as instruções ou acesso no seu e-mail
+                                    logo após a confirmação.</p>
+                        </details>
+                        <details class="group bg-[#f8f7f4] rounded-2xl p-5">
+                              <summary class="flex items-center justify-between cursor-pointer list-none"><span
+                                          class="font-semibold"><i
+                                                class="fas fa-shield-halved mr-3 text-[#6b6560]"></i>É seguro comprar
+                                          aqui?</span><i
+                                          class="fas fa-chevron-down text-[#6b6560] group-open:rotate-180 transition-transform"></i>
+                              </summary>
+                              <p class="mt-4 text-[#6b6560] text-sm leading-relaxed">Sim. Utilizamos sistemas seguros de
+                                    pagamento e validação para proteger todas as transações. Seus dados são
+                                    criptografados.</p>
+                        </details>
+                        <details class="group bg-[#f8f7f4] rounded-2xl p-5">
+                              <summary class="flex items-center justify-between cursor-pointer list-none"><span
+                                          class="font-semibold"><i class="fas fa-clock mr-3 text-[#6b6560]"></i>Quanto
+                                          tempo demora para receber?</span><i
+                                          class="fas fa-chevron-down text-[#6b6560] group-open:rotate-180 transition-transform"></i>
+                              </summary>
+                              <p class="mt-4 text-[#6b6560] text-sm leading-relaxed">A maioria das entregas é
+                                    instantânea ou feita em poucos minutos após a confirmação do pagamento. Produtos
+                                    físicos têm prazo estimado no momento da compra.</p>
+                        </details>
+                        <details class="group bg-[#f8f7f4] rounded-2xl p-5">
+                              <summary class="flex items-center justify-between cursor-pointer list-none"><span
+                                          class="font-semibold"><i class="fas fa-headset mr-3 text-[#6b6560]"></i>Como
+                                          funciona o suporte?</span><i
+                                          class="fas fa-chevron-down text-[#6b6560] group-open:rotate-180 transition-transform"></i>
+                              </summary>
+                              <p class="mt-4 text-[#6b6560] text-sm leading-relaxed">Oferecemos suporte via Discord e
+                                    e-mail. Nossa equipe responde rapidamente durante todo o dia para resolver qualquer
+                                    dúvida ou problema.</p>
+                        </details>
+                        <details class="group bg-[#f8f7f4] rounded-2xl p-5">
+                              <summary class="flex items-center justify-between cursor-pointer list-none"><span
+                                          class="font-semibold"><i
+                                                class="fas fa-rotate-left mr-3 text-[#6b6560]"></i>Posso pedir
+                                          reembolso?</span><i
+                                          class="fas fa-chevron-down text-[#6b6560] group-open:rotate-180 transition-transform"></i>
+                              </summary>
+                              <p class="mt-4 text-[#6b6560] text-sm leading-relaxed">Sim, em casos de problema no
+                                    produto ou não entrega. Entre em contato com nosso suporte e avaliaremos seu caso o
+                                    mais rápido possível.</p>
+                        </details>
+                  </div>
+            </div>
+      </section>
+
+      <div id="checkout" role="dialog" aria-modal="true" aria-label="Carrinho e pagamento"
+            class="fixed inset-0 z-[300] bg-[#1a1714]/70 backdrop-blur-sm flex items-end md:items-center justify-center p-0 opacity-0 pointer-events-none transition-all duration-300">
+            <div id="checkout-panel"
+                  class="checkout-panel bg-white w-full max-w-[860px] rounded-t-3xl md:rounded-3xl h-[92vh] md:h-auto md:max-h-[92vh] flex flex-col translate-y-full md:translate-y-0 transition-transform duration-300">
+                  <div class="mobile-gesture-handle md:hidden flex-shrink-0 pt-3 cursor-grab active:cursor-grabbing">
+                  </div>
+                  <div class="checkout-panel-content flex-1 overflow-y-auto px-3 py-4 md:p-8 relative">
+                        <div
+                              class="flex items-center justify-between mb-4 md:mb-6 md:pb-5 md:border-b md:border-[#e8e4df]">
+                              <div>
+                                    <h2 class="text-lg md:text-xl font-bold"><i class="fas fa-bag-shopping mr-2"></i>
+                                          Carrinho</h2>
+                                    <p class="text-[#6b6560] text-xs md:text-sm mt-0.5 md:mt-1">Finalize via PIX ou
+                                          cartão</p>
+                              </div>
+                              <button id="checkout-close" aria-label="Fechar carrinho"
+                                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl border border-[#e8e4df] flex items-center justify-center hover:bg-[#f8f7f4] transition-colors"><i
+                                          class="fas fa-xmark text-sm md:text-base"></i></button>
+                        </div>
+                        <div id="checkout-toast"
+                              class="fixed top-20 md:top-24 right-4 md:right-8 z-[500] px-4 py-3 rounded-xl shadow-lg text-sm font-medium transform -translate-y-4 opacity-0 transition-all duration-300 pointer-events-none">
+                        </div>
+                        <div class="flex flex-col gap-6">
+                              <div class="order-2 md:order-1">
+                                    <p
+                                          class="text-xs md:text-sm font-bold uppercase tracking-wider text-[#6b6560] mb-3">
+                                          <i class="fas fa-receipt mr-1 md:mr-2"></i> Resumo do pedido</p>
+                                    <div id="checkout-items" class="flex flex-col gap-2"></div>
+                                    <div class="flex justify-between items-center pt-3 mt-3 border-t border-[#e8e4df]">
+                                          <span class="text-sm md:font-semibold">Total</span>
+                                          <strong id="checkout-total"
+                                                class="text-xl md:text-2xl font-bold text-[#c8502a]">R$ 0,00</strong>
+                                    </div>
+                              </div>
+                              <form id="checkout-form" novalidate
+                                    class="order-1 md:order-2 flex flex-col gap-3 md:gap-4">
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-name" class="text-sm font-semibold"><i
+                                                      class="fas fa-user mr-2 text-[#6b6560]"></i>Nome completo</label>
+                                          <input id="checkout-name" name="name" placeholder="Seu nome completo"
+                                                autocomplete="name" aria-describedby="checkout-name-error"
+                                                class="px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all" />
+                                          <p id="checkout-name-error" class="hidden text-xs font-medium text-red-600">
+                                          </p>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-nickname" class="text-sm font-semibold"><i
+                                                      class="fas fa-at mr-2 text-[#6b6560]"></i>Nickname <span
+                                                      class="text-[#a09a94] font-normal">(opcional)</span></label>
+                                          <input id="checkout-nickname" name="nickname" placeholder="Seu apelido"
+                                                maxlength="32" autocomplete="off"
+                                                aria-describedby="checkout-nickname-error"
+                                                class="px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all" />
+                                          <p class="text-xs text-[#a09a94]">De 4 a 32 caracteres.</p>
+                                          <p id="checkout-nickname-error"
+                                                class="hidden text-xs font-medium text-red-600"></p>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-email" class="text-sm font-semibold"><i
+                                                      class="fas fa-envelope mr-2 text-[#6b6560]"></i>E-mail</label>
+                                          <input id="checkout-email" name="email" type="email"
+                                                placeholder="voce@email.com" autocomplete="email"
+                                                aria-describedby="checkout-email-error"
+                                                class="px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all" />
+                                          <p id="checkout-email-error" class="hidden text-xs font-medium text-red-600">
+                                          </p>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-phone" class="text-sm font-semibold"><i
+                                                      class="fas fa-phone mr-2 text-[#6b6560]"></i>Telefone <span
+                                                      class="text-[#a09a94] font-normal">(opcional)</span></label>
+                                          <input id="checkout-phone" name="phone" type="tel"
+                                                placeholder="(00) 00000-0000" inputmode="tel" maxlength="15"
+                                                autocomplete="tel"
+                                                class="px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all" />
+                                          <p class="text-xs text-[#a09a94]">Para contato sobre o pedido.</p>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-cpf" class="text-sm font-semibold"><i
+                                                      class="fas fa-id-card mr-2 text-[#6b6560]"></i>CPF <span
+                                                      class="text-[#a09a94] font-normal">(opcional)</span></label>
+                                          <input id="checkout-cpf" name="cpf" placeholder="000.000.000-00"
+                                                inputmode="numeric" maxlength="14" autocomplete="off"
+                                                aria-describedby="checkout-cpf-error"
+                                                class="px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all" />
+                                          <p id="checkout-cpf-error" class="hidden text-xs font-medium text-red-600">
+                                          </p>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-note" class="text-sm font-semibold"><i
+                                                      class="fas fa-comment mr-2 text-[#6b6560]"></i>Observação <span
+                                                      class="text-[#a09a94] font-normal">(opcional)</span></label>
+                                          <textarea id="checkout-note" name="note" rows="2"
+                                                placeholder="Algo a informar?" autocomplete="off"
+                                                class="px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all resize-none"></textarea>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                          <label for="checkout-coupon" class="text-sm font-semibold"><i
+                                                      class="fas fa-ticket mr-2 text-[#6b6560]"></i>Cupom <span
+                                                      class="text-[#a09a94] font-normal">(opcional)</span></label>
+                                          <div class="flex gap-2">
+                                                <input id="checkout-coupon" name="coupon" placeholder="Ex: BEMVINDO10"
+                                                      autocomplete="off" aria-describedby="checkout-coupon-status"
+                                                      class="flex-1 px-4 py-3.5 border border-[#e8e4df] rounded-xl focus:ring-2 focus:ring-[#c8502a] focus:border-transparent outline-none transition-all" />
+                                                <button id="checkout-apply-coupon" type="button"
+                                                      class="px-4 py-3 bg-white border border-[#e8e4df] text-[#1a1714] font-semibold rounded-xl hover:border-[#c8502a] hover:text-[#c8502a] disabled:opacity-60 transition-all whitespace-nowrap">
+                                                      <i class="fas fa-ticket mr-2"></i> Aplicar
+                                                </button>
+                                          </div>
+                                          <p id="checkout-coupon-status" class="hidden text-xs font-medium"></p>
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                          <label class="text-sm font-semibold"><i
+                                                      class="fas fa-credit-card mr-2 text-[#6b6560]"></i>Pagamento</label>
+                                          <div class="grid grid-cols-2 gap-2 payment-methods">
+                                                <label class="cursor-pointer">
+                                                      <input type="radio" name="payment_method" value="PIX" checked
+                                                            class="peer sr-only" />
+                                                      <div
+                                                            class="p-2.5 md:p-3 border-2 border-[#e8e4df] rounded-lg md:rounded-xl peer-checked:border-[#c8502a] peer-checked:bg-[#fef3ec] hover:border-[#c8502a] transition-all text-center">
+                                                            <i
+                                                                  class="fas fa-qrcode text-lg md:text-xl text-[#6b6560]"></i>
+                                                            <p class="font-semibold text-[11px] md:text-xs mt-0.5">PIX
+                                                            </p>
+                                                      </div>
+                                                </label>
+                                                <label class="cursor-pointer">
+                                                      <input type="radio" name="payment_method" value="CARD"
+                                                            class="peer sr-only" />
+                                                      <div
+                                                            class="p-2.5 md:p-3 border-2 border-[#e8e4df] rounded-lg md:rounded-xl peer-checked:border-[#c8502a] peer-checked:bg-[#fef3ec] hover:border-[#c8502a] transition-all text-center">
+                                                            <i
+                                                                  class="fas fa-credit-card text-lg md:text-xl text-[#6b6560]"></i>
+                                                            <p class="font-semibold text-[11px] md:text-xs mt-0.5">
+                                                                  Cartão</p>
+                                                      </div>
+                                                </label>
+                                          </div>
+                                    </div>
+                                    <button id="checkout-submit" type="submit"
+                                          class="w-full py-3 bg-[#1a1714] text-white text-sm md:text-base font-semibold rounded-lg hover:bg-[#c8502a] disabled:opacity-50 transition-all shadow-sm"><i
+                                                class="fas fa-qrcode mr-1.5 md:mr-2"></i> Finalizar Pedido</button>
+                              </form>
+                        </div>
+                        <div id="checkout-result" class="hidden mt-4 pt-4 md:mt-6 md:pt-5 border-t border-[#e8e4df]">
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div id="pix-modal" role="dialog" aria-modal="true" aria-label="Pagamento PIX"
+            class="fixed inset-0 z-[400] bg-[#1a1714]/80 backdrop-blur-sm flex items-end md:items-center justify-center p-0 opacity-0 pointer-events-none transition-all duration-300">
+            <div id="pix-modal-panel"
+                  class="bg-white w-full max-w-sm rounded-t-3xl md:rounded-2xl p-4 md:p-8 text-center pb-24 md:pb-8">
+            </div>
+      </div>
+
+      <div id="card-modal" role="dialog" aria-modal="true" aria-label="Pagamento Cartão"
+            class="fixed inset-0 z-[400] bg-[#1a1714]/80 backdrop-blur-sm flex items-end md:items-center justify-center p-0 opacity-0 pointer-events-none transition-all duration-300">
+            <div id="card-modal-panel"
+                  class="bg-white w-full max-w-sm rounded-t-3xl md:rounded-2xl p-4 md:p-8 text-center pb-24 md:pb-8">
+            </div>
+      </div>
+
+      <footer class="bg-[#1a1714] text-white py-12 px-4 mt-auto">
+            <div class="max-w-6xl mx-auto">
+                  <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                        <div class="flex flex-col items-center md:items-start gap-4">
+                              <a href="#" class="text-lg font-semibold">Loja <span
+                                          class="text-[#c8502a]">Virtual</span></a>
+                              <div
+                                    class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 text-sm text-[#a09a94]">
+                                    <a href="#" class="hover:text-white transition-colors"><i
+                                                class="fas fa-house mr-1"></i> Início</a>
+                                    <a href="#shop" class="hover:text-white transition-colors"><i
+                                                class="fas fa-store mr-1"></i> Loja</a>
+                                    <a href="#" class="hover:text-[#5865F2] transition-all"><i
+                                                class="fab fa-discord mr-1"></i> Discord</a>
+                              </div>
+                        </div>
+                        <div class="flex gap-3">
+                              <a href="#" aria-label="Instagram"
+                                    class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-[#a09a94] hover:text-white hover:bg-white/20 transition-all"><i
+                                          class="fab fa-instagram"></i></a>
+                              <a href="#" aria-label="YouTube"
+                                    class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-[#a09a94] hover:text-white hover:bg-white/20 transition-all"><i
+                                          class="fab fa-youtube"></i></a>
+                              <a href="#" aria-label="TikTok"
+                                    class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-[#a09a94] hover:text-white hover:bg-white/20 transition-all"><i
+                                          class="fab fa-tiktok"></i></a>
+                              <a href="#" aria-label="Discord"
+                                    class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-[#a09a94] hover:text-[#5865F2] hover:bg-white/20 transition-all"><i
+                                          class="fab fa-discord"></i></a>
+                        </div>
+                  </div>
+                  <div
+                        class="flex flex-col md:flex-row justify-between items-center gap-3 pt-6 mt-6 border-t border-white/10 text-sm text-[#a09a94]">
+                        <span>© 2026 Loja Virtual · Todos os direitos reservados</span>
+                        <div class="flex items-center gap-2"><i class="fas fa-code text-xs"></i><span>Powered
+                                    by</span><span class="text-[#c8502a] font-semibold">caBRAPI</span></div>
+                  </div>
+            </div>
+      </footer>
+
+ </body>
+</html>

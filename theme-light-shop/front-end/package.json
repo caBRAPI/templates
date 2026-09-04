@@ -1,0 +1,13 @@
+{
+  "name": "@caBRAPI/theme-light-shop",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.0",
+    "vite": "^8.0.10",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
